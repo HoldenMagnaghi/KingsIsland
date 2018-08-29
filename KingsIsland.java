@@ -17,23 +17,22 @@ public class KingsIsland
 		double foodCost;
 		double costPerPerson;
 		double totalCost;
-		double avgCost;
+		double ticket=32.99;
 		//Declare variables for the number of people, parking cost, food cost, total cost, cost per person
 
-
 		System.out.print("How many people: ");
-		numPeople=input.readInt();//Prompt for and read in the number of people in the group
+		//Prompt for and read in the number of people in the group
 		numPeople=input.nextInt();
 
 		System.out.print("How much is parking: ");
-		parkCost=input.readDouble();//Prompt for and read in the cost of parking
-		parkCost=input.nextDOuble();
+		//Prompt for and read in the cost of parking
+		parkCost=input.nextDouble();
 
 		System.out.print("How much have you spent on food: ");
-		foodCost=input.readDouble();//Prompt for and read in the amount spent on food
+		//Prompt for and read in the amount spent on food
+		foodCost=input.nextDouble();
 
-
-		totalCost=parkCost+foodCost;
+		totalCost=parkCost+foodCost+ticket;
 		//Calculate the total expenses
 
 
@@ -41,10 +40,10 @@ public class KingsIsland
 		costPerPerson=totalCost/numPeople;
 
 		System.out.println("number of people:"+numPeople);
-		System.out.println("Parking cost:"+parkCost+"$");
-		System.out.println("Food cost:"+foodCost+"$");
-		System.out.println("Total cost:"+totalCost+"$");
-		System.out.println("Average cost per person:"+costPerPerson+"$");
+		System.out.println("Parking cost: $"+parkCost);
+		System.out.println("Food cost: $"+foodCost);
+		System.out.println("Total cost: $"+totalCost);
+		System.out.println("Average cost per person: $"+costPerPerson);
 		//Display results
 
 
