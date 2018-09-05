@@ -17,7 +17,8 @@ public class KingsIsland
 		double foodCost;
 		double costPerPerson;
 		double totalCost;
-		double ticket=32.99;
+		double ticketCost=32.99;
+		double ticketTotal;
 		//Declare variables for the number of people, parking cost, food cost, total cost, cost per person
 
 		System.out.print("How many people: ");
@@ -32,7 +33,10 @@ public class KingsIsland
 		//Prompt for and read in the amount spent on food
 		foodCost=input.nextDouble();
 
-		totalCost=parkCost+foodCost+ticket;
+		ticketTotal=ticketCost*numPeople;
+
+
+		totalCost=parkCost+foodCost+ticketTotal;
 		//Calculate the total expenses
 
 
